@@ -1,0 +1,167 @@
+.result-modal__backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(35, 18, 18, 0.48);
+    backdrop-filter: blur(14px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.result-modal__card {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 32px;
+    padding: 36px 36px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 28px 90px rgba(0, 0, 0, 0.2), 0 8px 28px rgba(0, 0, 0, 0.1);
+    border: 1.5px solid rgba(255, 255, 255, 0.7);
+    /* Ensure card stays above backdrop blur */
+    will-change: transform;
+}
+
+/* ── Badge ── */
+.result-modal__badge {
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(45, 45, 45, 0.45);
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 100px;
+    padding: 4px 14px;
+}
+
+/* ── Emoji ── */
+.result-modal__emoji {
+    font-size: 3rem;
+    line-height: 1;
+    filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.13));
+}
+
+/* ── Title ── */
+.result-modal__title {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 1.65rem;
+    color: #2d2d2d;
+    margin: 0;
+    text-align: center;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+}
+
+/* ── Hook — poetic opener ── */
+.result-modal__hook {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 1rem;
+    color: #4a3535;
+    margin: 0;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+/* ── Body lines — punchy stack ── */
+.result-modal__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+
+.result-modal__body-line {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #2d2d2d;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+    opacity: 0.85;
+}
+
+/* ── Context ── */
+.result-modal__context {
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.83rem;
+    color: #5a4848;
+    text-align: center;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 360px;
+}
+
+/* ── Trait pills ── */
+.result-modal__traits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    justify-content: center;
+}
+
+.result-modal__trait-pill {
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgba(45, 45, 45, 0.7);
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(45, 45, 45, 0.1);
+    border-radius: 100px;
+    padding: 5px 13px;
+    letter-spacing: 0.02em;
+}
+
+/* ── Reset button ── */
+.result-modal__reset-btn {
+    margin-top: 4px;
+    background: rgba(45, 45, 45, 0.9);
+    color: #fffdfb;
+    border: none;
+    border-radius: 100px;
+    padding: 11px 32px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.02em;
+    transition: background 0.18s ease;
+    will-change: transform;
+}
+
+.result-modal__reset-btn:hover {
+    background: #2d2d2d;
+}
+
+.result-modal__dismiss {
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.6rem;
+    color: rgba(45, 45, 45, 0.28);
+    margin: 0;
+    text-align: center;
+}
+
+/* Scrollable on small screens */
+@media (max-height: 700px) {
+    .result-modal__card {
+        padding: 28px 28px 20px;
+        gap: 10px;
+    }
+
+    .result-modal__emoji {
+        font-size: 2.2rem;
+    }
+
+    .result-modal__title {
+        font-size: 1.35rem;
+    }
+
+    .result-modal__body-line {
+        font-size: 1.1rem;
+    }
+}

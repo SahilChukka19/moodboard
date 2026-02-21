@@ -1,0 +1,49 @@
+.element-stash {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+}
+
+.element-stash__header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.element-stash__title {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 1.4rem;
+    color: #2d2d2d;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.element-stash__subtitle {
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.78rem;
+    color: #a08080;
+    margin: 0;
+    min-height: 1.2em;
+}
+
+/* 3-column grid for 17 icons */
+.element-stash__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    overflow-y: auto;
+    padding-right: 4px;
+    /* Limit height so the stash scrolls rather than blows up the layout */
+    max-height: 520px;
+}
+
+.element-stash__empty {
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.85rem;
+    color: #c0a0a0;
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 24px 0;
+    font-style: italic;
+}

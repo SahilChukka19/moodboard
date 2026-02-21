@@ -1,0 +1,101 @@
+.moodboard-game {
+    min-height: 100vh;
+    background: #fdf8f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 24px 48px;
+    position: relative;
+    overflow-x: hidden;
+    /* Establish an isolated stacking context for performance */
+    isolation: isolate;
+}
+
+/* CSS-only grain — cheaper than SVG filter on large areas */
+.moodboard-game__grain {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.032;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 300px 300px;
+    /* Keep grain off the GPU compositing layers */
+    will-change: auto;
+}
+
+.moodboard-game__hero {
+    text-align: center;
+    margin-bottom: 36px;
+    position: relative;
+    z-index: 1;
+}
+
+.moodboard-game__eyebrow {
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #d4a3a3;
+    margin: 0 0 10px;
+}
+
+.moodboard-game__heading {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: clamp(1.9rem, 5vw, 3.2rem);
+    color: #2d2d2d;
+    margin: 0 0 10px;
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+}
+
+.moodboard-game__subheading {
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.95rem;
+    color: #a08080;
+    margin: 0;
+    max-width: 380px;
+    line-height: 1.55;
+}
+
+.moodboard-game__layout {
+    width: 100%;
+    max-width: 960px;
+    display: grid;
+    /* Stash gets more room so the 3-col grid fits comfortably */
+    grid-template-columns: 1.15fr 1px 1fr;
+    gap: 0 28px;
+    position: relative;
+    z-index: 1;
+    align-items: start;
+}
+
+.moodboard-game__divider {
+    width: 1px;
+    min-height: 520px;
+    background: linear-gradient(to bottom,
+            transparent,
+            rgba(212, 163, 163, 0.3),
+            transparent);
+}
+
+.moodboard-game__pane {
+    min-height: 480px;
+}
+
+@media (max-width: 700px) {
+    .moodboard-game__layout {
+        grid-template-columns: 1fr;
+        gap: 28px 0;
+    }
+
+    .moodboard-game__divider {
+        display: none;
+    }
+
+    .moodboard-game__pane {
+        min-height: auto;
+    }
+}

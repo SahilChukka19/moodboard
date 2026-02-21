@@ -1,0 +1,67 @@
+.canvas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+
+.canvas__header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.canvas__title {
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 1.5rem;
+    color: #2d2d2d;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.canvas__subtitle {
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.8rem;
+    color: #a08080;
+    margin: 0;
+    min-height: 1.2em;
+    transition: all 0.3s ease;
+}
+
+.canvas__slots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 12px;
+    flex: 1;
+}
+
+/* Make the last row span differently for 5 items visual balance */
+.canvas__slot:nth-child(4) {
+    grid-column: 1;
+}
+
+.canvas__slot:nth-child(5) {
+    grid-column: 2;
+}
+
+.canvas__slot {
+    min-height: 100px;
+}
+
+.canvas__empty-slot {
+    height: 100%;
+    min-height: 100px;
+    border-radius: 18px;
+    border: 2px dashed rgba(212, 163, 163, 0.35);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.canvas__remove-hint {
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.7rem;
+    color: #c0a0a0;
+    text-align: center;
+    margin: 0;
+    font-style: italic;
+}
