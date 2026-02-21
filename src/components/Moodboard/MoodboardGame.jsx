@@ -48,7 +48,6 @@ export default function MoodboardGame() {
             <div className="moodboard-game__grain" aria-hidden />
 
             <header className="moodboard-game__hero">
-                <p className="moodboard-game__eyebrow">interactive portfolio element</p>
                 <h1 className="moodboard-game__heading">Build Your Moodboard</h1>
                 <p className="moodboard-game__subheading">
                     Choose 5 things that speak to you. We'll tell you something true.
