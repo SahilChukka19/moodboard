@@ -12,6 +12,16 @@ The project was designed to be embedded directly inside a personal portfolio sit
 
 ---
 
+## Screenshots
+
+![Initial state — full stash, empty canvas](docs/screenshots/ss1.png)
+
+![Mid-selection — three items placed on the canvas](docs/screenshots/ss2.png)
+
+![Persona reveal modal with confetti](docs/screenshots/ss3.png)
+
+---
+
 ## Tech Stack
 
 | Layer | Technology |
