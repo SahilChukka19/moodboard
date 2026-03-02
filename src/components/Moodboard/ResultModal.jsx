@@ -76,14 +76,7 @@ export default function ResultModal({ persona, onReset }) {
                             {persona.copy.hook}
                         </motion.p>
 
-                        {/* Punchy body lines */}
-                        <motion.div className="result-modal__body" {...stagger(0.48)}>
-                            {persona.copy.body.map((line, i) => (
-                                <span key={i} className="result-modal__body-line">
-                                    {line}
-                                </span>
-                            ))}
-                        </motion.div>
+
 
                         {/* Connector context */}
                         <motion.p className="result-modal__context" {...stagger(0.56)}>
@@ -110,7 +103,6 @@ export default function ResultModal({ persona, onReset }) {
                             ↩ Try Again
                         </motion.button>
 
-                        <p className="result-modal__dismiss">click outside to dismiss</p>
                     </motion.div>
                 </motion.div>
             )}

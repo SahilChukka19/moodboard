@@ -45,8 +45,6 @@ export default function MoodboardGame() {
 
     return (
         <div className="moodboard-game">
-            <div className="moodboard-game__grain" aria-hidden />
-
             <header className="moodboard-game__hero">
                 <h1 className="moodboard-game__heading">Build Your Moodboard</h1>
                 <p className="moodboard-game__subheading">

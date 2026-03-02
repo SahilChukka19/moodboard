@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Sacramento&display=swap");
 
 *,
 *::before,
@@ -9,12 +9,13 @@
 }
 
 :root {
-    --color-bg: #fdf8f5;
+    --color-bg: #ede0d8;
     --color-surface: #fffdfb;
     --color-rose: #d4a3a3;
     --color-text: #2d2d2d;
     --color-muted: #a08080;
     --font-serif: "DM Serif Display", Georgia, serif;
+    --font-script: "Sacramento", cursive;
     --font-sans: "DM Sans", system-ui, sans-serif;
     --radius-card: 18px;
     --shadow-card: 0 4px 14px rgba(0, 0, 0, 0.05);
