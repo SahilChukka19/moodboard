@@ -12,7 +12,8 @@
 }
 
 .canvas__title {
-    font-family: "DM Serif Display", Georgia, serif;
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-style: italic;
     font-size: 1.5rem;
     color: #2d2d2d;
     margin: 0;
@@ -20,7 +21,7 @@
 }
 
 .canvas__subtitle {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Albert Sans", system-ui, sans-serif;
     font-size: 0.8rem;
     color: #a08080;
     margin: 0;
@@ -58,7 +59,7 @@
 }
 
 .canvas__remove-hint {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Albert Sans", system-ui, sans-serif;
     font-size: 0.7rem;
     color: #c0a0a0;
     text-align: center;

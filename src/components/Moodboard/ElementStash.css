@@ -12,7 +12,8 @@
 }
 
 .element-stash__title {
-    font-family: "DM Serif Display", Georgia, serif;
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-style: italic;
     font-size: 1.4rem;
     color: #2d2d2d;
     margin: 0;
@@ -20,7 +21,7 @@
 }
 
 .element-stash__subtitle {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Albert Sans", system-ui, sans-serif;
     font-size: 0.78rem;
     color: #a08080;
     margin: 0;
@@ -39,7 +40,7 @@
 }
 
 .element-stash__empty {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Albert Sans", system-ui, sans-serif;
     font-size: 0.85rem;
     color: #c0a0a0;
     grid-column: 1 / -1;

@@ -30,7 +30,7 @@
 }
 
 .moodboard-game__eyebrow {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Albert Sans", system-ui, sans-serif;
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.2em;
@@ -40,21 +40,23 @@
 }
 
 .moodboard-game__heading {
-    font-family: "DM Serif Display", Georgia, serif;
+    font-family: "Libre Baskerville", Georgia, serif;
     font-size: clamp(1.9rem, 5vw, 3.2rem);
     color: #2d2d2d;
     margin: 0 0 10px;
     letter-spacing: -0.04em;
     line-height: 1.1;
+    font-style: italic;
 }
 
 .moodboard-game__subheading {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Albert Sans", system-ui, sans-serif;
     font-size: 0.95rem;
     color: #a08080;
-    margin: 0;
+    margin: 0 auto;
     max-width: 380px;
     line-height: 1.55;
+    text-align: center;
 }
 
 .moodboard-game__layout {

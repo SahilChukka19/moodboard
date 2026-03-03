@@ -41,7 +41,7 @@
 }
 
 .item-card__label {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Albert Sans", system-ui, sans-serif;
   font-size: 0.72rem;
   font-weight: 600;
   color: #2d2d2d;
@@ -54,7 +54,7 @@
   position: absolute;
   top: 7px;
   right: 9px;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Albert Sans", system-ui, sans-serif;
   font-size: 0.58rem;
   font-weight: 700;
   color: rgba(45, 45, 45, 0.35);

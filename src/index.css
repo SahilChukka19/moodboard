@@ -1,4 +1,172 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Sacramento&display=swap");
+/* ── Albert Sans ─────────────────────────────────────── */
+@font-face {
+    font-family: "Albert Sans";
+    src: url("/fonts/AlbertSans-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Albert Sans";
+    src: url("/fonts/AlbertSans-ExtraLight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Albert Sans";
+    src: url("/fonts/AlbertSans-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Albert Sans";
+    src: url("/fonts/AlbertSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Albert Sans";
+    src: url("/fonts/AlbertSans-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Albert Sans";
+    src: url("/fonts/AlbertSans-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Albert Sans";
+    src: url("/fonts/AlbertSans-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Albert Sans";
+    src: url("/fonts/AlbertSans-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Albert Sans";
+    src: url("/fonts/AlbertSans-SemiBoldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Albert Sans";
+    src: url("/fonts/AlbertSans-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Albert Sans";
+    src: url("/fonts/AlbertSans-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Albert Sans";
+    src: url("/fonts/AlbertSans-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Albert Sans";
+    src: url("/fonts/AlbertSans-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ── Libre Baskerville ───────────────────────────────── */
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url("/fonts/LibreBaskerville-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url("/fonts/LibreBaskerville-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url("/fonts/LibreBaskerville-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url("/fonts/LibreBaskerville-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url("/fonts/LibreBaskerville-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url("/fonts/LibreBaskerville-SemiBoldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url("/fonts/LibreBaskerville-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url("/fonts/LibreBaskerville-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
 
 *,
 *::before,
@@ -14,9 +182,8 @@
     --color-rose: #d4a3a3;
     --color-text: #2d2d2d;
     --color-muted: #a08080;
-    --font-serif: "DM Serif Display", Georgia, serif;
-    --font-script: "Sacramento", cursive;
-    --font-sans: "DM Sans", system-ui, sans-serif;
+    --font-serif: "Libre Baskerville", Georgia, serif;
+    --font-sans: "Albert Sans", system-ui, sans-serif;
     --radius-card: 18px;
     --shadow-card: 0 4px 14px rgba(0, 0, 0, 0.05);
 }

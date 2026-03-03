@@ -28,7 +28,7 @@
 
 /* ── Badge ── */
 .result-modal__badge {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Albert Sans", system-ui, sans-serif;
     font-size: 0.6rem;
     font-weight: 700;
     letter-spacing: 0.2em;
@@ -48,7 +48,8 @@
 
 /* ── Title ── */
 .result-modal__title {
-    font-family: "DM Serif Display", Georgia, serif;
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-style: italic;
     font-size: 1.65rem;
     color: #2d2d2d;
     margin: 0;
@@ -59,7 +60,7 @@
 
 /* ── Hook — poetic opener ── */
 .result-modal__hook {
-    font-family: "DM Serif Display", Georgia, serif;
+    font-family: "Libre Baskerville", Georgia, serif;
     font-size: 1rem;
     color: #4a3535;
     margin: 0;
@@ -77,7 +78,8 @@
 }
 
 .result-modal__body-line {
-    font-family: "DM Serif Display", Georgia, serif;
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-style: italic;
     font-size: 1.3rem;
     font-weight: 400;
     color: #2d2d2d;
@@ -88,7 +90,7 @@
 
 /* ── Context ── */
 .result-modal__context {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Albert Sans", system-ui, sans-serif;
     font-size: 0.83rem;
     color: #5a4848;
     text-align: center;
@@ -106,7 +108,7 @@
 }
 
 .result-modal__trait-pill {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Albert Sans", system-ui, sans-serif;
     font-size: 0.7rem;
     font-weight: 600;
     color: rgba(45, 45, 45, 0.7);
@@ -125,7 +127,7 @@
     border: none;
     border-radius: 100px;
     padding: 11px 32px;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Albert Sans", system-ui, sans-serif;
     font-size: 0.85rem;
     font-weight: 600;
     cursor: pointer;
@@ -139,7 +141,7 @@
 }
 
 .result-modal__dismiss {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Albert Sans", system-ui, sans-serif;
     font-size: 0.6rem;
     color: rgba(45, 45, 45, 0.28);
     margin: 0;
