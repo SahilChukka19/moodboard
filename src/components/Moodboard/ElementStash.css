@@ -1,20 +1,20 @@
 .element-stash {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
     height: 100%;
 }
 
 .element-stash__header {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 2px;
 }
 
 .element-stash__title {
     font-family: "Libre Baskerville", Georgia, serif;
     font-style: italic;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #2d2d2d;
     margin: 0;
     letter-spacing: -0.02em;
@@ -22,21 +22,18 @@
 
 .element-stash__subtitle {
     font-family: "Albert Sans", system-ui, sans-serif;
-    font-size: 0.78rem;
+    font-size: 0.72rem;
     color: #a08080;
     margin: 0;
     min-height: 1.2em;
 }
 
-/* 3-column grid for 17 icons */
+/* 6-column grid — all 17 cards visible in 3 rows, no scroll */
 .element-stash__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    overflow-y: auto;
-    padding-right: 4px;
-    /* Limit height so the stash scrolls rather than blows up the layout */
-    max-height: 520px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 7px;
+    overflow-y: visible;
 }
 
 .element-stash__empty {
@@ -45,6 +42,6 @@
     color: #c0a0a0;
     grid-column: 1 / -1;
     text-align: center;
-    padding: 24px 0;
+    padding: 16px 0;
     font-style: italic;
 }

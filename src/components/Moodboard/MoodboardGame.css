@@ -1,20 +1,10 @@
 .moodboard-game {
     min-height: 100vh;
-    /* Linen texture: warp threads + weft threads + fine noise, all on warm base */
-    background-color: #ede0d8;
-    background-image:
-        /* Fine horizontal warp fibres */
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='1' y='0' fill='rgba(160,110,90,0.10)'/%3E%3Crect width='4' height='1' y='2' fill='rgba(255,240,230,0.08)'/%3E%3C/svg%3E"),
-        /* Fine vertical weft fibres */
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='1' height='4' x='0' fill='rgba(160,110,90,0.08)'/%3E%3Crect width='1' height='4' x='2' fill='rgba(255,240,230,0.06)'/%3E%3C/svg%3E"),
-        /* Mid-scale noise for organic fibre variation */
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeBlend in='SourceGraphic' in2='noise' mode='multiply'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E");
-    background-repeat: repeat, repeat, repeat;
-    background-size: 4px 4px, 4px 4px, 200px 200px;
+    background: #FAFAFA;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 32px 24px 48px;
+    padding: 12px 24px 16px;
     position: relative;
     overflow-x: hidden;
     isolation: isolate;
@@ -24,26 +14,26 @@
 
 .moodboard-game__hero {
     text-align: center;
-    margin-bottom: 36px;
+    margin-bottom: 12px;
     position: relative;
     z-index: 1;
 }
 
 .moodboard-game__eyebrow {
     font-family: "Albert Sans", system-ui, sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 700;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #d4a3a3;
-    margin: 0 0 10px;
+    margin: 0 0 6px;
 }
 
 .moodboard-game__heading {
     font-family: "Libre Baskerville", Georgia, serif;
-    font-size: clamp(1.9rem, 5vw, 3.2rem);
+    font-size: clamp(1.4rem, 3.5vw, 2.2rem);
     color: #2d2d2d;
-    margin: 0 0 10px;
+    margin: 0 0 6px;
     letter-spacing: -0.04em;
     line-height: 1.1;
     font-style: italic;
@@ -51,21 +41,20 @@
 
 .moodboard-game__subheading {
     font-family: "Albert Sans", system-ui, sans-serif;
-    font-size: 0.95rem;
+    font-size: 0.82rem;
     color: #a08080;
     margin: 0 auto;
     max-width: 380px;
-    line-height: 1.55;
+    line-height: 1.4;
     text-align: center;
 }
 
 .moodboard-game__layout {
     width: 100%;
-    max-width: 960px;
+    max-width: 1080px;
     display: grid;
-    /* Stash gets more room so the 3-col grid fits comfortably */
-    grid-template-columns: 1.15fr 1px 1fr;
-    gap: 0 28px;
+    grid-template-columns: 1.3fr 1px 1fr;
+    gap: 0 24px;
     position: relative;
     z-index: 1;
     align-items: start;
@@ -73,7 +62,7 @@
 
 .moodboard-game__divider {
     width: 1px;
-    min-height: 520px;
+    min-height: 360px;
     background: linear-gradient(to bottom,
             transparent,
             rgba(212, 163, 163, 0.3),
@@ -81,13 +70,13 @@
 }
 
 .moodboard-game__pane {
-    min-height: 480px;
+    min-height: 0;
 }
 
 @media (max-width: 700px) {
     .moodboard-game__layout {
         grid-template-columns: 1fr;
-        gap: 28px 0;
+        gap: 20px 0;
     }
 
     .moodboard-game__divider {

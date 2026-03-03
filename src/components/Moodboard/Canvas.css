@@ -1,20 +1,20 @@
 .canvas {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
     height: 100%;
 }
 
 .canvas__header {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 2px;
 }
 
 .canvas__title {
     font-family: "Libre Baskerville", Georgia, serif;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #2d2d2d;
     margin: 0;
     letter-spacing: -0.02em;
@@ -22,7 +22,7 @@
 
 .canvas__subtitle {
     font-family: "Albert Sans", system-ui, sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: #a08080;
     margin: 0;
     min-height: 1.2em;
@@ -33,7 +33,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 12px;
+    gap: 8px;
     flex: 1;
 }
 
@@ -47,20 +47,20 @@
 }
 
 .canvas__slot {
-    min-height: 100px;
+    min-height: 80px;
 }
 
 .canvas__empty-slot {
     height: 100%;
-    min-height: 100px;
-    border-radius: 18px;
+    min-height: 80px;
+    border-radius: 14px;
     border: 2px dashed rgba(212, 163, 163, 0.35);
     background: rgba(255, 255, 255, 0.3);
 }
 
 .canvas__remove-hint {
     font-family: "Albert Sans", system-ui, sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     color: #c0a0a0;
     text-align: center;
     margin: 0;
